@@ -116,6 +116,7 @@ body {
   .text {
     margin-top: 5px;
     color: black;
+    font: bold;
   }
   
   table {
@@ -190,8 +191,6 @@ body {
   
 
 .friend-list {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -200,7 +199,7 @@ body {
 .friend-list li {
 	margin-right: 20px;
 	margin-bottom: 20px;
-	flex-basis: calc(33.33% - 20px);
+	flex-basis: calc(33% - 20px);
 }
 
 .friend-list li img {
@@ -264,17 +263,23 @@ body {
     text-decoration: none;
     }
     /* Стили для блока списка друзей */
-	#friends-list {
-		padding: 10px;
-		margin-left: 20%;
-		margin-right: 20%;
+
+	.friends-panel{
+    background-color: white;
+    margin-top: 20px;
+    height: 150px;
+    padding: 10px;
 	}
+  .friends-panel input[type="text"] {
+    width: auto;
+    height: 30px;
+    border: none;
+    padding: 10px;
+  }
 
 	.friend {
-        width: 900px;
-        margin-left: 150px;
+        width: 800px;
 		display: flex;
-		justify-content: space-between;
         margin-top: 20px;
 		margin-bottom: 10px;
 		padding: 10px;
@@ -292,7 +297,6 @@ body {
         color: #4267b2;
 		font-weight: bold;
 		text-decoration: none;
-        text-align: left;
     }
     button{
         border: 1px solid #ccc;
@@ -303,26 +307,47 @@ body {
 	.right-menu {
 		background-color: white;
 		width: 400px;
-        margin-left: 20px;
         margin-top: 20px;
         padding: 5px;
+        margin-right: 200px;
 	}
     .right-menu ul {
         list-style: none;
       }
       
-      .right-menu li {
-        margin: 20px 1px;
+    .right-menu li {
+        padding: 10px 0px;
       }
-      .right-menu a {
+    .right-menu a {
         color: #4267b2;
         text-decoration: none;
-      }
+    }
 
 	/* Стили для блока возможныедрузья */
 	.possible-friends {
 		background-color: white;
-		padding: 10px;
-		margin-left: 20%;
-		margin-right: 20%;
+    width: auto;
+		padding: 20px;
+    margin-top: 20px;
+    margin-right: 200px;
 	}
+  .possible-friend {
+    padding: 5px;
+    width: auto;
+		display: flex;
+		justify-content: space-between;
+    margin-top: 5px;
+		background-color: white;
+		border-radius: 10px;
+  }
+  button {
+    background-color:#4a74ce;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  
