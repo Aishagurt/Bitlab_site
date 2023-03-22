@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convertation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class ='container'>
+            <div class="currency-row">
+                <div>
+                    Введите сумму:      
+                </div> 
+                <div>
+                    <label for="amount"><b>KZT (tenge):</b></label>         
+                </div> 
+                <div>
+                    <label for="amount"><b>USD (dollar):</b></label>         
+                </div> 
+                <div>
+                    <label for="amount"><b>EUR (euro):</b></label>         
+                </div> 
+            </div>
+            <div class="currency-row">
+                <div>
+                        <input type="number" id="amount" min="0" oninput="convertCurrency()">
+                        <select id="currency" onchange="convertCurrency()">
+                        <option value="KZT">KZT</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        </select>
+                </div>
+                <div>
+                    <p id="kzt-value">0 KZT</p>
+                </div>
+                <div>
+                    <p id="usd-value">0 USD</p>
+                </div>
+                <div>
+                    <p id="eur-value">0 EUR</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
