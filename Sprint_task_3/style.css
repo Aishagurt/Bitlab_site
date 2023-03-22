@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    background-color: #fefefe; 
+  }
+.currency-row {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .currency-row div {
+    flex: 1;
+    padding: 10px;
+  }
+   select {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    
+  }
+  p {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    background-color: #ededed;
+  }
+  input {
+    flex: 1;
+    width: 130px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+  }
+
+
+  
+
