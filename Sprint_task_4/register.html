@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+      <header>
+        <h1>TWITTER</h1>
+        <div class="spacer"></div>
+        <h3 style="margin-right: 20px;"><a href="register.html">Register</a></h3>
+        <h3><a href="login.html">Log in</a></h3>
+      </header>
+      <div  class="box">
+        
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email">
+        
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password">
+
+            <label for="name">FULL NAME:</label>
+            <input type="text" id="name">
+
+            <label for="country">COUNTRY:</label>
+            <select name="country" id="country">
+              <option>Italy</option>
+              <option>Kazakhstan</option>
+              <option>USA</option>
+            </select>
+
+
+            <label for="date">BIRTH DATE:</label>
+            <input type="date" id="birth">
+
+          <button type="button" id="register" onclick="addUser()">REGISTER</button>
+          <p id="message"></p>
+       </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
